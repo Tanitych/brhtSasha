@@ -4476,6 +4476,8 @@ body {
   -webkit-transition: background-color 0.25s ease;
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease;
+  text-align: center;
+  line-height: 20px;
 }
 .button:hover {
   color: #fff;
@@ -4569,13 +4571,10 @@ body {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 20px;
+  text-align: center;
+  line-height: 11px;
 }
-@media (max-width: 991.98px) {
-  .trylink {
-    margin-top: 10px;
-    margin-bottom: 40px;
-  }
-}
+
 .trylink i {
   display: inline-block;
   font-style: normal;
@@ -4603,6 +4602,33 @@ body {
   transition: all ease 0.2s;
   border-radius: 10px;
 }
+
+@media (max-width: 600px) {
+  .card {
+    width: 384px;
+  }
+}
+@media (max-width: 441px) {
+  .card {
+    width: 348px;
+
+    height: 247px;
+  }
+}
+@media (max-width: 370px) {
+  .card {
+    width: 348px;
+    width: 304px;
+    height: 226px;
+    height: 247px;
+  }
+}
+
+@media (max-width: 370px) {
+  .card_text {
+    padding: 11px 0px;
+  }
+}
 /* .card_text h3:hover:after {
   width: 100%;
   left: 0;
@@ -4620,20 +4646,11 @@ body {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
-@media (max-width: 991.98px) {
-  .card > img {
-    display: none;
-  }
+
+.card > img {
+  display: none;
 }
-@media (max-width: 991.98px) {
-  .card {
-    background-image: url(../images/dest/card.png);
-    background-size: cover;
-    width: 100%;
-    padding-top: 64.30062630480167%;
-    height: auto;
-  }
-}
+
 .card-logo_w {
   z-index: 12;
   top: 45px;
